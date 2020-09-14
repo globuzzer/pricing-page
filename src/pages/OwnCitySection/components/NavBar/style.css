@@ -1,0 +1,14 @@
+.get_started {
+    width: 140px;
+    height: 30px;
+    border: 1px solid #f24b6a;
+    color: #f24b6a;
+    background-color: transparent;
+    border-radius: 15px;
+}
+#get_started {
+    color: #f24b6a;
+}
+.hash_link {
+    color: #888888 !important;
+}

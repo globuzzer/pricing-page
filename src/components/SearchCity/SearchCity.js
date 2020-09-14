@@ -1,0 +1,87 @@
+import React, {useState, useEffect, useRef} from "react";
+import {FiSearch} from "react-icons/fi";
+import "./style.css";
+import mockCity from "../../mockData/mockJoinCity";
+
+export const SearchCity = () => {
+    const [query, setQuery] = useState("");
+    const [isVisible, setIsVisible] = useState(false);
+    const [joinCity, setJoinCity] = useState(mockCity);
+    const [currentURL, setCurrentURL] = useState();
+    const node = useRef();
+    /* eslint-disable */
+    useEffect(() => {
+        fetchJoinCityData();
+    }, [query]);
+    /* eslint-enable */
+    const fetchJoinCityData = () => {
+        const sorted = mockCity.filter((city) => city.name.toLowerCase().includes(query.toLowerCase()));
+        setJoinCity(sorted.sort());
+    };
+    const onSelectCity = (city, url) => {
+        setIsVisible(!isVisible);
+        setCurrentURL(url);
+        setQuery(city);
+    };
+    const navigateTo = (url) => {
+        window.location.href = `${url}`;
+    };
+    const handleClick = (e) => {
+        if (node.current.contains(e.target)) {
+            // inside click
+        } else {
+            setIsVisible(false);
+        }
+    };
+    useEffect(() => {
+        // add when mounted
+        document.addEventListener("mousedown", handleClick);
+        // return function to be called when unmounted
+        return () => {
+            document.removeEventListener("mousedown", handleClick);
+        };
+    }, []);
+    return (
+        <div className="search_city_container" ref={node}>
+            <div className="header_search">
+                <div className="search_input">
+                    <FiSearch className="search_icon" />
+                    <input
+                        autoComplete="new-password"
+                        type="text"
+                        placeholder="Your next destination "
+                        id="header_input_city"
+                        value={query}
+                        onChange={(event) => setQuery(event.target.value)}
+                        onClick={() => setIsVisible(!isVisible)}
+                    />
+                </div>
+                <button
+                    type="button"
+                    className="button_submit"
+                    id="search_submit"
+                    onClick={() => {
+                        query !== "" ? navigateTo(currentURL) : alert("Please enter a city name");
+                    }}
+                >
+                    Search
+                </button>
+            </div>
+            {isVisible && (
+                /*eslint-disable*/
+                <div className="search_result_containter">
+                    {joinCity.map((city, index) => (
+                        <button
+                            className="result_item"
+                            onClick={() => onSelectCity(city.name, city.url)}
+                            type="button"
+                            key={index}
+                        >
+                            {city.name}
+                        </button>
+                    ))}
+                </div>
+            )}
+        </div>
+    );
+};
