@@ -19,7 +19,7 @@ const App = () => {
 
     return (
         <>
-            {pathname !== "/signup" && pathname !== "/own_city_section" && <Navigation />}
+            {pathname !== "/signup" && pathname !== "/own-city-section" && <Navigation />}
             <ScrollToTop />
             <Switch>
                 <Route path="/" exact>
@@ -37,10 +37,10 @@ const App = () => {
                 <Route path="/career">
                     <Career />
                 </Route>
-                <Route path="/about_us">
+                <Route path="/about-us">
                     <AboutUs />
                 </Route>
-                <Route path="/own_city_section">
+                <Route path="/own-city-section">
                     <OwnCitySection />
                 </Route>
                 <Route path="/signup">
