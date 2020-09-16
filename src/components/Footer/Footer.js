@@ -8,6 +8,7 @@ import {
   FaPinterestP,
 } from "react-icons/fa";
 import logo from "../../assets/Footer/globuzzer_logo.png";
+import FooterCopyRight from "./FooterCopyright";
 import { GetWindowDimension } from "../../utils/GetWindowDimension";
 import "./style.css";
 
@@ -95,7 +96,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <p id="footer-copyright">© 2020 Globuzzer. All rights reserved</p>
+      <FooterCopyRight />
     </footer>
   );
   const FooterMobile = () => (
@@ -164,7 +165,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <p id="footer-copyright">© 2020 Globuzzer. All rights reserved</p>
+      <FooterCopyRight />
     </footer>
   );
   return <>{width > 1100 ? <FooterDesktop /> : <FooterMobile />}</>;
