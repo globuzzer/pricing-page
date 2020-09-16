@@ -12,15 +12,15 @@ export const AuxService = (props) => {
   return (
     <button
       type="button"
-      className="auxservice_container"
+      className="auxservice-container"
       onClick={() => handleNavigation(link)}
     >
-      <div className="aux_logo_container">
-        <img src={logo} alt="logo" className="aux_logo" />
+      <div className="aux-logo-container">
+        <img src={logo} alt="logo" className="aux-logo" />
       </div>
-      <div className="auxservice_bottom_container">
-        <p id="find_jobs">{name}</p>
-        <p className="aux_des">{des}</p>
+      <div className="auxservice-bottom-container">
+        <p id="find-jobs">{name}</p>
+        <p className="aux-des">{des}</p>
       </div>
     </button>
   );

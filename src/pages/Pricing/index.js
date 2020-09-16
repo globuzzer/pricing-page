@@ -46,24 +46,24 @@ export const Pricing = () => {
   return (
     <>
       <PricingHeader width={width} setContactModal={setContactModal} />
-      <section className="section_know_service">
-        <div className="know_service_text_container">
-          <p id="know_service_title">Why advertise with Globuzzer?</p>
-          <div className="know_service_container">
+      <section className="section-know-service">
+        <div className="know-service-text-container">
+          <p id="know-service-title">Why advertise with Globuzzer?</p>
+          <div className="know-service-container">
             <button
               type="button"
-              className="know_service_block_container"
+              className="know-service-block-container"
               onClick={() => {
                 goto(0);
                 setActive(0);
               }}
             >
               <AiFillStar
-                className="know_service_block_icon"
+                className="know-service-block_icon"
                 style={{ color: active === 0 && "#E1586D" }}
               />
               <p
-                className="know_service_block_text"
+                className="know-service-block-text"
                 style={{
                   color: active === 0 && "#E1586D",
                   fontWeight: active === 0 && "bold",
@@ -74,18 +74,18 @@ export const Pricing = () => {
             </button>
             <button
               type="button"
-              className="know_service_block_container"
+              className="know-service-block-container"
               onClick={() => {
                 goto(1);
                 setActive(1);
               }}
             >
               <AiFillStar
-                className="know_service_block_icon"
+                className="know-service-block-icon"
                 style={{ color: active === 1 && "#E1586D" }}
               />
               <p
-                className="know_service_block_text"
+                className="know-service-block-text"
                 style={{
                   color: active === 1 && "#E1586D",
                   fontWeight: active === 1 && "bold",
@@ -96,18 +96,18 @@ export const Pricing = () => {
             </button>
             <button
               type="button"
-              className="know_service_block_container"
+              className="know-service-block-container"
               onClick={() => {
                 goto(2);
                 setActive(2);
               }}
             >
               <AiFillStar
-                className="know_service_block_icon"
+                className="know-service-block-icon"
                 style={{ color: active === 2 && "#E1586D" }}
               />
               <p
-                className="know_service_block_text"
+                className="know-service-block-text"
                 style={{
                   color: active === 2 && "#E1586D",
                   fontWeight: active === 2 && "bold",
@@ -132,19 +132,19 @@ export const Pricing = () => {
           >
             {slideImages.map((image, index) => (
               <div className="each-slide" key={index}>
-                <img src={image} alt="header" className="slide_img" />
+                <img src={image} alt="header" className="slide-img" />
               </div>
             ))}
           </Slide>
         </div>
       </section>
-      <section className="section_pricing_plans" id="our_plans">
+      <section className="section-pricing-plans" id="our_plans">
         <SectionHeader header="Choose your plan" />
-        <p id="pricing_plans_des">
+        <p id="pricing-plans-des">
           Our plans are tailored to fit any brand or business. Select the plan
           that best suits your needs.
         </p>
-        <div className="pricing_plans_grid">
+        <div className="pricing-plans-grid">
           {pricingPackages.map((pricingPackage, index) => (
             <PricingPlan
               key={index}
@@ -157,44 +157,44 @@ export const Pricing = () => {
           ))}
         </div>
       </section>
-      <section className="section_why">
+      <section className="section-why">
         <SectionHeader header="Why Globuzzer Network?" />
-        <div className="pricing_why">
-          <div className="pricing_why_reason">
-            <img src={globe} alt="globe" className="pricing_why_globe" />
-            <p className="pricing_why_text" id="text_globe">
-              <span className="pricing_why_text_em">18 </span> City sections and
+        <div className="pricing-why">
+          <div className="pricing-why-reason">
+            <img src={globe} alt="globe" className="pricing-why-globe" />
+            <p className="pricing-why-text" id="text-globe">
+              <span className="pricing-why-text-em">18 </span> City sections and
               growing
             </p>
           </div>
-          <div className="pricing_why_reason">
-            <div className="pricing_why_reason_member_grid">
+          <div className="pricing-why-reason">
+            <div className="pricing-why-reason-member-grid">
               {MemberNearYou.map((memberData, index) => (
                 <MemberNearYou memberData={memberData} key={index} />
               ))}
             </div>
-            <p className="pricing_why_text" id="text_member">
-              <span className="pricing_why_text_em">&nbsp;32K </span> Users in
+            <p className="pricing-why-text" id="text-member">
+              <span className="pricing-why-text-em">&nbsp;32K </span> Users in
               our network
             </p>
           </div>
-          <div className="pricing_why_reason">
-            <div className="temp_pricing_content">
+          <div className="pricing-why-reason">
+            <div className="temp-pricing-content">
               {why.map((content, index) => (
                 <PricingWhyContent content={content} key={index} />
               ))}
             </div>
 
-            <p className="pricing_why_text" id="text_member">
-              <span className="pricing_why_text_em">180K </span> In social media
+            <p className="pricing-why-text" id="text-member">
+              <span className="pricing-why-text-em">180K </span> In social media
               reach
             </p>
           </div>
         </div>
       </section>
-      <section className="section_extra_service">
+      <section className="section-extra-service">
         <SectionHeader header="Available services at Globuzzer" />
-        <div className="pricing_extra_service_grid">
+        <div className="pricing-extra-service-grid">
           {pricingExtraServices.map((pricingExtraService, index) => (
             <PricingExtraService
               pricingExtraService={pricingExtraService}
@@ -206,9 +206,9 @@ export const Pricing = () => {
           ))}
         </div>
       </section>
-      <section className="section_pricing_review">
+      <section className="section-pricing-review">
         <SectionHeader header="Our partners" />
-        <div className="review_slide_container">
+        <div className="review-slide-container">
           <Slide infinite arrows duration={5000}>
             {ReviewData.map((review, index) => (
               <PricingReview review={review} key={index} />

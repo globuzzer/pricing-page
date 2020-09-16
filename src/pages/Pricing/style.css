@@ -3,14 +3,14 @@ a {
   color: #f9f9f9;
 }
 
-.know_service_text_container {
+.know-service-text-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.know_service_block_container {
+.know-service-block-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -21,11 +21,11 @@ a {
   background-color: transparent;
 }
 
-.know_service_block_container p {
+.know-service-block-container p {
   text-align: start;
 }
 
-.know_service_block_icon {
+.know-service-block-icon {
   width: 18px;
   height: 18px;
   color: #9b9b9b;
@@ -33,14 +33,14 @@ a {
   padding-right: 15px;
 }
 
-.know_service_block_text {
+.know-service-block-text {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   color: #909090;
 }
 
-#know_service_title {
+#know-service-title {
   width: 337px;
   height: 75px;
   font-style: normal;
@@ -52,7 +52,7 @@ a {
   margin-top: 52px;
 }
 
-.section_know_service {
+.section-know-service {
   margin-bottom: 65px;
   display: flex;
   flex-direction: column;
@@ -67,7 +67,7 @@ a {
   margin-top: 35px;
 }
 
-.slide_img {
+.slide-img {
   width: 263.19px;
   height: 173.63px;
 }
@@ -82,7 +82,7 @@ a {
   background-position: center;
 }
 
-#pricing_plans_des {
+#pricing-plans-des {
   width: 273px;
   height: 29px;
   font-style: normal;
@@ -94,7 +94,7 @@ a {
   padding: 10px 0;
 }
 
-.section_pricing_plans {
+.section-pricing-plans {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,7 +104,7 @@ a {
   padding: 65px 0;
 }
 
-.pricing_plans_grid {
+.pricing-plans-grid {
   display: grid;
   gap: 25px;
   justify-content: center;
@@ -113,13 +113,13 @@ a {
   margin-left: 10px;
 }
 
-.pricing_why_globe {
+.pricing-why-globe {
   width: 207px;
   height: 121.71px;
   margin-right: 25px;
 }
 
-.pricing_why_text {
+.pricing-why-text {
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -127,26 +127,26 @@ a {
   text-align: start;
 }
 
-#text_globe {
+#text-globe {
   width: 65px;
   height: 74px;
 }
 
-.pricing_why_text_em {
+.pricing-why-text-em {
   font-weight: bold;
   font-size: 24px;
   line-height: 44px;
   color: #e1586d;
 }
 
-.pricing_why_reason {
+.pricing-why-reason {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
 }
 
-.pricing_why_reason_member_grid {
+.pricing-why-reason-member-grid {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(3, 50px);
@@ -154,30 +154,30 @@ a {
   width: 207px;
 }
 
-#text_member {
+#text-member {
   width: 59px;
   height: 69px;
 }
 
-.pricing_why {
+.pricing-why {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.temp_pricing_content {
+.temp-pricing-content {
   display: flex;
   justify-content: flex-start;
   width: 207px;
 }
 
-.pricing_extra_service_grid {
+.pricing-extra-service-grid {
   display: grid;
   gap: 10px;
 }
 
-.section_extra_service {
+.section-extra-service {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -185,66 +185,66 @@ a {
   margin-bottom: 30px;
 }
 
-.section_pricing_review {
+.section-pricing-review {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.review_slide_container {
+.review-slide-container {
   width: 330px;
   height: 200px;
   z-index: -1;
 }
 @media (min-width: 1100px) {
-  .know_service_block_container {
+  .know-service-block-container {
     justify-content: flex-start;
     align-items: center;
   }
-  .section_extra_service {
+  .section-extra-service {
     margin-bottom: 113px;
     margin-top: 50px;
   }
-  .review_slide_container {
+  .review-slide-container {
     width: 837px;
     height: 250px;
   }
-  .pricing_extra_service_grid {
+  .pricing-extra-service-grid {
     gap: 31px;
     grid-template-columns: repeat(4, 275px);
     grid-template-rows: repeat(1, 348px);
     margin-top: 40px;
   }
-  .pricing_why {
+  .pricing-why {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-end;
   }
-  .pricing_why_reason_member_grid {
+  .pricing-why-reason-member-grid {
     display: grid;
     gap: 25px;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(2, 100px);
     width: auto;
   }
-  #text_globe {
+  #text-globe {
     width: 313px;
     height: 56px;
   }
-  #text_member {
+  #text-member {
     width: 290px;
     height: 56px;
     margin-top: 60px;
   }
-  .pricing_why_text {
+  .pricing-why-text {
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
     margin-top: 32px;
   }
-  .pricing_why_text_em {
+  .pricing-why-text-em {
     font-size: 36px;
     line-height: 44px;
   }
@@ -254,17 +254,17 @@ a {
     margin-right: 0px;
     margin-bottom: 32px;
   }
-  .pricing_why_reason {
+  .pricing-why-reason {
     flex-direction: column;
   }
-  .pricing_plans_grid {
+  .pricing-plans-grid {
     margin-top: 20px;
     display: grid;
     gap: 50px;
     grid-template-columns: repeat(4, 215px);
     grid-template-rows: repeat(1, 460px);
   }
-  #pricing_plans_des {
+  #pricing-plans-des {
     width: 780px;
     height: 50px;
     font-weight: normal;
@@ -277,7 +277,7 @@ a {
     margin: 0;
     margin-top: 35px;
   }
-  .slide_img {
+  .slide-img {
     width: 658px;
     height: 419px;
   }
@@ -290,23 +290,23 @@ a {
     height: 419px;
     background-position: center;
   }
-  .section_know_service {
+  .section-know-service {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  .know_service_text_container {
+  .know-service-text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     margin-right: 56px;
   }
-  .know_service_block_text {
+  .know-service-block-text {
     font-size: 24px;
   }
-  #know_service_title {
+  #know-service-title {
     width: 492px;
     height: 74px;
     font-weight: 500;
