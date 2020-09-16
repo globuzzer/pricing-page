@@ -5,10 +5,10 @@ import { FiMenu } from "react-icons/fi";
 import { animated, useSpring } from "react-spring";
 import GLOBUZZER from "../../assets/GLOBUZZER.svg";
 import { GetWindowDimension } from "../../utils/GetWindowDimension";
-import three from "../../assets/Nav/3.svg";
-import four from "../../assets/Nav/4.svg";
-import six from "../../assets/Nav/6.svg";
-import two from "../../assets/Nav/2.svg";
+import DestinationIcon from "../../assets/Nav/DestinationIcon.svg";
+import ServicesIcon from "../../assets/Nav/ServicesIcon.svg";
+import CareerIcon from "../../assets/Nav/CareerIcon.svg";
+import PricingIcon from "../../assets/Nav/PricingIcon.svg";
 import "./style.css";
 
 export const Navigation = () => {
@@ -133,20 +133,20 @@ export const Navigation = () => {
       <animated.div style={animation} className="navigation_mobile_menu">
         <div className="nav_top">
           <HashLink className="nav_item" to="/#section_newcity" smooth>
-            <img src={three} alt="nav_icon" className="nav_icon" />
+            <img src={DestinationIcon} alt="nav_icon" className="nav_icon" />
             Destination
           </HashLink>
           <HashLink className="nav_item" to="/#aux_services" smooth>
-            <img src={four} alt="nav_icon" className="nav_icon" />
+            <img src={ServicesIcon} alt="nav_icon" className="nav_icon" />
             Services
           </HashLink>
 
           <HashLink className="nav_item" to="/pricing">
-            <img src={two} alt="nav_icon" className="nav_icon" />
+            <img src={PricingIcon} alt="nav_icon" className="nav_icon" />
             Pricing
           </HashLink>
           <a href="http://skillscanner.globuzzer.com/" className="nav_item">
-            <img src={six} alt="nav_icon" className="nav_icon" />
+            <img src={CareerIcon} alt="nav_icon" className="nav_icon" />
             Career
           </a>
         </div>
