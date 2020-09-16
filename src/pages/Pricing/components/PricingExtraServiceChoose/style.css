@@ -42,10 +42,6 @@
   align-items: center;
 }
 
-/* #start_left_choose {
-  justify-content: space-around !important;
-} */
-
 .start_right {
   display: flex;
   flex-direction: column;

@@ -42,8 +42,6 @@
 }
 
 #pricing_our_number {
-  /* width: 269px;
-    height: 65px; */
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -125,8 +123,6 @@
     margin-bottom: 42px;
   }
   #pricing_our_number {
-    /* width: 407px;
-        height: 95px; */
     left: 91px;
     top: 238px;
     font-size: 36px;

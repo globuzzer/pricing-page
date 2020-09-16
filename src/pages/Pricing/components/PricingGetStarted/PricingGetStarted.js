@@ -37,7 +37,6 @@ const Form = ({
   return (
     <>
       <div className="modal_body">
-        {/* <p id="added">Your contact information</p> */}
         <p id="modal_body_1">* Mandatory field</p>
         <div className="pricing_input_grid">
           <input
@@ -194,9 +193,7 @@ export const PricingGetStarted = ({ startModal, setStartModal, plan }) => {
       overlayClassName="pricing_start_modal_overlay"
       ariaHideApp={false}
     >
-      {/* <FiX onClick={() => setStartModal(!startModal)} className="start_modal_close_icon" /> */}
       <div className="start_left">
-        {/* <p id="left_header">Choose your plan</p> */}
         <div className="start_pricing_plans_grid">
           {testPricingPackage.map((pricingPackage, index) => (
             <PricingPlanChoose key={index} pricingPackage={pricingPackage} />

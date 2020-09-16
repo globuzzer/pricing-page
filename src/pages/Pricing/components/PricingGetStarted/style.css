@@ -66,13 +66,6 @@
 }
 
 .start_pricing_plans_grid {
-  /* display: grid;
-    gap: 25px;
-    grid-template-columns: repeat(4, 60.56px);
-    grid-template-rows: repeat(1, 125.21px);
-    justify-content: center;
-    align-items: center;
-    margin-top: 43px; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

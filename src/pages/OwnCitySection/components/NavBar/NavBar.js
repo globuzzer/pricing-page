@@ -43,14 +43,14 @@ export const NavBar = ({ modalIsOpen, setModalIsOpen }) => {
       </Link>
       <div className="navigation_center">
         <HashLink
-          to="/own_city_section#section_journey"
+          to="/own-city-section#section_journey"
           className="navigation_link hash_link"
           smooth
         >
           Testimonials
         </HashLink>
         <HashLink
-          to="/own_city_section#main_footer"
+          to="/own-city-section#main_footer"
           className="navigation_link hash_link"
           smooth
         >

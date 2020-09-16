@@ -191,10 +191,6 @@ export const PricingContactUs = ({ contactModal, setContactModal }) => {
     });
   };
 
-  // const handleConfirmationForm = () => {
-  //   setContactModal(!contactModal);
-  //   setIsSubmitted(false);
-  // };
   return (
     <Modal
       isOpen={contactModal}
