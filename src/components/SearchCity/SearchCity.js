@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FiSearch } from "react-icons/fi";
 import "./style.css";
-import mockCity from "../../mockData/mockJoinCity";
+import CityData from "../../Data/JoinCityData";
 
 export const SearchCity = () => {
   const [query, setQuery] = useState("");
   const [isVisible, setIsVisible] = useState(false);
-  const [joinCity, setJoinCity] = useState(mockCity);
+  const [joinCity, setJoinCity] = useState(CityData);
   const [currentURL, setCurrentURL] = useState();
   const node = useRef();
 

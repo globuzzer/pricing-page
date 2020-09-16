@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
 import { IoIosArrowDropleft } from "react-icons/io";
 import { SignUpJoinCity } from "../components/SignUpJoinCity/SignUpJoinCity";
-import mockJoinCity from "../mockData/mockJoinCity";
+import JoinCity from "../Data/JoinCityData";
 import { RequestNewCity } from "../components/RequestNewCity/RequestNewCity";
 
 export const SignUp = () => {
   const [query, setQuery] = useState("");
   const [selected, setSelected] = useState();
-  const [joinCity, setJoinCity] = useState(mockJoinCity);
+  const [joinCity, setJoinCity] = useState(JoinCity);
   const [navlink, setNavlink] = useState();
 
   useEffect(() => {
@@ -19,7 +19,7 @@ export const SignUp = () => {
   }, [query]);
 
   const fetchJoinCityData = () => {
-    const sorted = mockJoinCity.filter((city) =>
+    const sorted = JoinCity.filter((city) =>
       city.name.toLowerCase().includes(query.toLowerCase())
     );
     setJoinCity(

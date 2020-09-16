@@ -9,9 +9,9 @@ import { JoinCity } from "../components/JoinCity/JoinCity";
 import community from "../assets/Value_community.svg";
 import expert from "../assets/Value_expert.svg";
 import journey from "../assets/Value_journey.svg";
-import mockJoinCity from "../mockData/mockJoinCity";
-import mockFeaturedArticles from "../mockData/mockFeatueredArticles";
-import mockAuxServices from "../mockData/mockAuxServices";
+import JoinCity from "../Data/JoinCityData";
+import FeaturedArticlesData from "../Data/FeatueredArticlesData";
+import AuxServicesData from "../Data/AuxServicesData";
 import { FeaturedArticle } from "../components/FeaturedArticle/FeaturedArticle";
 import { AuxService } from "../components/AuxService/AuxService";
 import { OwnSection } from "../components/OwnSection/OwnSection";
@@ -23,14 +23,14 @@ import { RequestNewCity } from "../components/RequestNewCity/RequestNewCity";
 export const Home = () => {
   const [query, setQuery] = useState("");
   const [moreJoinCity, setMoreJoinCity] = useState(false);
-  const [joinCity, setJoinCity] = useState(mockJoinCity);
+  const [joinCity, setJoinCity] = useState(JoinCity);
 
   useEffect(() => {
     fetchJoinCityData();
   }, [query, moreJoinCity]);
 
   const fetchJoinCityData = () => {
-    const sorted = mockJoinCity.filter((city) =>
+    const sorted = JoinCity.filter((city) =>
       city.name.toLowerCase().includes(query.toLowerCase())
     );
     moreJoinCity
@@ -126,7 +126,7 @@ Most importantly, we have been in the same spot, and we can support you. `;
 
       <section className="featured_articles" id="featured_articles">
         <SectionHeader header="Featured articles" />
-        {mockFeaturedArticles.map((articleData, index) => (
+        {FeaturedArticlesData.map((articleData, index) => (
           <FeaturedArticle articleData={articleData} key={index} />
         ))}
         <div className="featured_articles_more">
@@ -142,7 +142,7 @@ Most importantly, we have been in the same spot, and we can support you. `;
       <section className="aux_services" id="aux_services">
         <SectionHeader header="Helpful services" />
         <div className="aux_list">
-          {mockAuxServices.map((AuxData, index) => (
+          {AuxServicesData.map((AuxData, index) => (
             <AuxService AuxData={AuxData} key={index} />
           ))}
         </div>

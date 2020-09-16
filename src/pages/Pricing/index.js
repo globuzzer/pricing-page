@@ -14,13 +14,13 @@ import { OwnSection } from "../../components/OwnSection/OwnSection";
 import { Footer } from "../../components/Footer/Footer";
 import globe from "../../assets/Pricing/Pricing_globe_1.svg";
 import { MemberNearYou } from "../../components/MemberNearYou/MemberNearYou";
-import mockMemberNearYou from "../../mockData/mockMemberNearYou";
+import MemberNearYou from "../../Data/MemberNearYouData";
 import { PricingWhyContent } from "./components/PricingWhyContent/PricingWhyContent";
-import pricingExtraServices from "../../mockData/mockPricingExtraServices";
+import pricingExtraServices from "../../Data/PricingExtraServicesData";
 import { PricingExtraService } from "./components/PricingExtraService/PricingExtraService";
 import { PricingReview } from "./components/PricingReview/PricingReview";
-import mockReviews from "../../mockData/mockReviewData";
-import pricingPackages from "../../mockData/mockPricingPackages";
+import ReviewData from "../../Data/ReviewData";
+import pricingPackages from "../../Data/PricingPackagesData";
 import { PricingContactUs } from "./components/PricingContactUs/PricingContactUs";
 import { PricingGetStarted } from "./components/PricingGetStarted/PricingGetStarted";
 import { PricingExtraServiceChoose } from "./components/PricingExtraServiceChoose/PricingExtraServiceChoose";
@@ -169,7 +169,7 @@ export const Pricing = () => {
           </div>
           <div className="pricing_why_reason">
             <div className="pricing_why_reason_member_grid">
-              {mockMemberNearYou.map((memberData, index) => (
+              {MemberNearYou.map((memberData, index) => (
                 <MemberNearYou memberData={memberData} key={index} />
               ))}
             </div>
@@ -210,7 +210,7 @@ export const Pricing = () => {
         <SectionHeader header="Our partners" />
         <div className="review_slide_container">
           <Slide infinite arrows duration={5000}>
-            {mockReviews.map((review, index) => (
+            {ReviewData.map((review, index) => (
               <PricingReview review={review} key={index} />
             ))}
           </Slide>

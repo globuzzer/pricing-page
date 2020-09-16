@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import { PricingPlanChoose } from "../PricingPlanChoose/PricingPlanChoose";
-import pricingPackages from "../../../../mockData/mockPricingPackages";
+import pricingPackages from "../../../../Data/PricingPackagesData";
 import axios from "axios";
 import "./style.css";
 
