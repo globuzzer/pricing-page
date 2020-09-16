@@ -15,7 +15,6 @@ export const Navigation = () => {
   const [navColor, setNavColor] = useState("transparent");
   const [isOpen, setIsOpen] = useState(false);
   const { width, height } = GetWindowDimension();
-  // const [mobileNavHeight, setMobileNavHeight] = useState("");
 
   window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
@@ -39,11 +38,6 @@ export const Navigation = () => {
     }
   });
 
-  // useEffect(() => {
-  //   const mobileHeight = document.querySelector(".pricing_header").offsetHeight;
-  //   console.log(mobileHeight);
-  //   setMobileNavHeight(mobileHeight);
-  // });
   const animation = useSpring({
     height: isOpen ? `${height}px` : "0px",
     opacity: isOpen ? 1 : 0,
@@ -146,10 +140,7 @@ export const Navigation = () => {
             <img src={four} alt="nav_icon" className="nav_icon" />
             Services
           </HashLink>
-          {/* <div className="nav_item">
-                        <img src={one} alt="nav_icon" className="nav_icon" />
-                        Topics
-                    </div> */}
+
           <HashLink className="nav_item" to="/pricing">
             <img src={two} alt="nav_icon" className="nav_icon" />
             Pricing
@@ -158,10 +149,6 @@ export const Navigation = () => {
             <img src={six} alt="nav_icon" className="nav_icon" />
             Career
           </a>
-          {/* <div className="nav_item">
-                        <img src={five} alt="nav_icon" className="nav_icon" />
-                        About us
-                    </div> */}
         </div>
         <div className="nav_bottom">
           <a

@@ -131,26 +131,6 @@ button {
   align-items: center;
 }
 
-/* .navigation_mobile_menu a {
-    text-decoration: none;
-    color: black;
-    height: 36px;
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-top: 1px solid #e5e5e5;
-    padding-left: 14px;
-}
-
-.navigation_mobile_menu a:hover {
-    filter: brightness(100%);
-}
-
-.navigation_mobile_menu a:visited {
-    color: black;
-} */
-
 .mobile_hamburger_close {
   height: 34px;
   width: 34px;
@@ -171,7 +151,8 @@ button {
   line-height: 17px;
 }
 
-.mobile_hamburger_close:hover, .mobile_hamburger_close:visited {
+.mobile_hamburger_close:hover,
+.mobile_hamburger_close:visited {
   background-color: #f24b6a;
 }
 
