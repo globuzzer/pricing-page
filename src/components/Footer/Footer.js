@@ -1,14 +1,7 @@
 import React from "react";
-import {
-  FaPlayCircle,
-  FaLinkedinIn,
-  FaInstagram,
-  FaFacebookF,
-  FaTwitter,
-  FaPinterestP,
-} from "react-icons/fa";
 import logo from "../../assets/Footer/globuzzer_logo.png";
 import FooterCopyRight from "./FooterCopyright";
+import FooterIcons from "./FooterIcons";
 import { GetWindowDimension } from "../../utils/GetWindowDimension";
 import "./style.css";
 
@@ -54,46 +47,7 @@ export const Footer = () => {
           <a href="../../pages/Home.js" id="footer-follow">
             FOLLOW US
           </a>
-          <div className="footer-content-icon-container">
-            <a
-              className="footer_icons_container"
-              href="https://www.facebook.com/Globuzzer/"
-            >
-              <FaFacebookF className="footer_icons" />
-            </a>
-            <a
-              className="footer_icons_container"
-              href="https://twitter.com/globuzzer"
-            >
-              <FaTwitter className="footer_icons" />
-            </a>
-            <a
-              className="footer_icons_container"
-              href="https://www.pinterest.se/globuzzer/"
-            >
-              <FaPinterestP className="footer_icons" />
-            </a>
-          </div>
-          <div className="footer-content-icon-container">
-            <a
-              className="footer_icons_container"
-              href="https://www.youtube.com/channel/UC4u8N-QBDMWG6OqzSni8clw"
-            >
-              <FaPlayCircle className="footer_icons" />
-            </a>
-            <a
-              className="footer_icons_container"
-              href="https://www.linkedin.com/company/globuzzer/"
-            >
-              <FaLinkedinIn className="footer_icons" />
-            </a>
-            <a
-              className="footer_icons_container"
-              href="https://www.instagram.com/globuzzer/"
-            >
-              <FaInstagram className="footer_icons" />
-            </a>
-          </div>
+          <FooterIcons />
         </div>
       </div>
       <FooterCopyRight />
@@ -123,46 +77,7 @@ export const Footer = () => {
           </a>
         </div>
         <div className="footer-content-column">
-          <div className="footer-content-icon-container">
-            <a
-              className="footer_icons_container"
-              href="https://www.facebook.com/SocialNetworkforStudentsandExpats/"
-            >
-              <FaFacebookF className="footer_icons" />
-            </a>
-            <a
-              className="footer_icons_container"
-              href="https://twitter.com/globuzzer"
-            >
-              <FaTwitter className="footer_icons" />
-            </a>
-            <a
-              className="footer_icons_container"
-              href="https://www.pinterest.se/globuzzer/"
-            >
-              <FaPinterestP className="footer_icons" />
-            </a>
-          </div>
-          <div className="footer-content-icon-container">
-            <a
-              className="footer_icons_container"
-              href="https://www.youtube.com/channel/UC4u8N-QBDMWG6OqzSni8clw"
-            >
-              <FaPlayCircle className="footer_icons" />
-            </a>
-            <a
-              className="footer_icons_container"
-              href="https://www.linkedin.com/company/globuzzer/"
-            >
-              <FaLinkedinIn className="footer_icons" />
-            </a>
-            <a
-              className="footer_icons_container"
-              href="https://www.instagram.com/globuzzer/"
-            >
-              <FaInstagram className="footer_icons" />
-            </a>
-          </div>
+          <FooterIcons />
         </div>
       </div>
       <FooterCopyRight />
