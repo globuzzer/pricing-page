@@ -70,21 +70,71 @@ export const NavBar = ({ modalIsOpen, setModalIsOpen }) => {
     </section>
   );
   const NavMobileMenu = () => (
-    <animated.div style={animation} className="navigation_mobile_menu">
-      <div className="navigation_mobile_menu_sub_container">
-        <p className="menu_title">Menu</p>
-        <FiX
-          className="mobile_hamburger_close"
-          onClick={() => {
-            setIsOpen(false);
+    <div style={{ display: "flex" }}>
+      {isOpen && (
+        <div
+          onKeyDown={() => {}}
+          tabIndex={0}
+          role="button"
+          style={{
+            backgroundColor: "transparent",
+            width: "100vw",
+            height: "100vh",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            zIndex: 9999,
+            color: "transparent",
           }}
-        />
-      </div>
-      <a href="../../App.js">Destinations</a>
-      <a href="../../App.js">Videos</a>
-      <a href="../../App.js">Articles</a>
-      <a href="../../App.js">Login</a>
-    </animated.div>
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          Test
+        </div>
+      )}
+      <animated.div style={animation} className="navigation_mobile_menu">
+        <div className="nav-top">
+          <HashLink className="nav-item" to="/#section_newcity" smooth>
+            <img src={three} alt="nav-icon" className="nav-icon" />
+            Destination
+          </HashLink>
+          <HashLink className="nav-item" to="/#aux_services" smooth>
+            <img src={four} alt="nav-icon" className="nav-icon" />
+            Services
+          </HashLink>
+
+          <HashLink className="nav-item" to="/pricing">
+            <img src={two} alt="nav-icon" className="nav-icon" />
+            Pricing
+          </HashLink>
+          <a href="http://skillscanner.globuzzer.com/" className="nav-item">
+            <img src={six} alt="nav-icon" className="nav-icon" />
+            Career
+          </a>
+        </div>
+        <div className="nav-bottom">
+          <a
+            href="https://globuzzer.com/travel-blog.php"
+            className="nav-mobile-own"
+          >
+            Create your travel blog
+          </a>
+          <div className="nav-bottom-container">
+            <a
+              type="button"
+              href="https://globuzzer.mn.co/sign_in"
+              className="nav-mob-link"
+            >
+              Login
+            </a>
+            <button type="button" className="nav-mob-link" id="mob-sign">
+              <Link to="/signup" className="nav-mob-link">
+                Sign up
+              </Link>
+            </button>
+          </div>
+        </div>
+      </animated.div>
+    </div>
   );
   const NavMobile = () => (
     <section
