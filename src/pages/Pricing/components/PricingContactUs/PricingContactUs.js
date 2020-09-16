@@ -186,9 +186,13 @@ export const PricingContactUs = ({ contactModal, setContactModal }) => {
       url: `${API_PATH}`,
       headers: { "Content-Type": "application/json" },
       data: form,
-    }).then((answer) => {
-      console.log(answer);
-    });
+    })
+      .then((answer) => {
+        console.log(answer);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   return (

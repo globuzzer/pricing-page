@@ -175,9 +175,13 @@ export const PricingExtraServiceChoose = ({
       url: `${API_PATH}`,
       headers: { "Content-Type": "application/json" },
       data: newState,
-    }).then((answer) => {
-      console.log(answer);
-    });
+    })
+      .then((answer) => {
+        console.log(answer);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
   return (
     <Modal
