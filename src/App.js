@@ -30,7 +30,6 @@ const App = () => {
         <Route path="/destination">
           <Destination />
         </Route>
-        git
         <Route path="/services">
           <Services />
         </Route>
