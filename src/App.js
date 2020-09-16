@@ -19,35 +19,35 @@ const App = () => {
 
     return (
         <>
-            {pathname !== "/signup" && pathname !== "/own-city-section" && <Navigation />}
-            <ScrollToTop />
+            {pathname !== "/signup" && pathname !== "/own-city-section" && <Navigation/>}
+            <ScrollToTop/>
             <Switch>
                 <Route path="/" exact>
-                    <Home />
+                    <Home/>
                 </Route>
                 <Route path="/destination">
                     <Destination />
                 </Route>
                 <Route path="/services">
-                    <Services />
+                    <Services/>
                 </Route>
                 <Route path="/pricing">
-                    <Pricing />
+                    <Pricing/>
                 </Route>
                 <Route path="/career">
-                    <Career />
+                    <Career/>
                 </Route>
                 <Route path="/about-us">
-                    <AboutUs />
+                    <AboutUs/>
                 </Route>
                 <Route path="/own-city-section">
-                    <OwnCitySection />
+                    <OwnCitySection/>
                 </Route>
                 <Route path="/signup">
-                    <SignUp />
+                    <SignUp/>
                 </Route>
                 <Route path="/helsinki">
-                    <Helsinki />
+                    <Helsinki/>
                 </Route>
             </Switch>
         </>
