@@ -15,9 +15,9 @@ export const PricingPlan = (props) => {
     keyword,
     positioning,
     SEO,
-    cCard,
-    cGet,
-    cHandle,
+    cardColor,
+    cardLinearColor,
+    cardHandle,
     promo,
     insightBold,
     copywritingBold,
@@ -28,13 +28,15 @@ export const PricingPlan = (props) => {
   } = pricingPackage;
 
   const styles = {
-    back: { backgroundColor: cCard },
-    banner: { backgroundColor: cCard },
+    back: { backgroundColor: cardColor },
+    banner: { backgroundColor: cardColor },
     handle: {
       borderBottom:
-        width >= 1100 ? `34px solid${cHandle}` : `21.14px solid${cHandle}`,
+        width >= 1100
+          ? `34px solid${cardHandle}`
+          : `21.14px solid${cardHandle}`,
     },
-    get: { background: cGet },
+    get: { background: cardLinearColor },
   };
   return (
     <div className="pricing_card_container">
