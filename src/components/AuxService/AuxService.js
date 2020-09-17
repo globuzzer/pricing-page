@@ -7,7 +7,7 @@ export const AuxService = (props) => {
   const { logo, link, des, name } = AuxData;
   let match = useRouteMatch();
   const handleNavigation = () => {
-    <Link to={`${match.url}`} />;
+    // <Link to={`${match.url}`} />;
   };
   return (
     <button

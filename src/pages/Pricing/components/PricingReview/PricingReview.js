@@ -5,9 +5,7 @@ export const PricingReview = (props) => {
   const { review } = props;
   const { ava, url } = review;
 
-  const navigateTo = (url) => {
-    window.location.href = `${url}`;
-  };
+  const navigateTo = (url) => {};
   return (
     <button
       type="button"

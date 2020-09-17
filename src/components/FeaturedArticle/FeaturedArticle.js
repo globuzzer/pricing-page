@@ -9,7 +9,7 @@ export const FeaturedArticle = (props) => {
   let match = useRouteMatch();
 
   const handleNavigation = () => {
-    <Link to={`${match.url}`} />;
+    // <Link to={`${match.url}`} />;
   };
   return (
     <div className="article_container">

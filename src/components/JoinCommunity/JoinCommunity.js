@@ -2,7 +2,7 @@ import React from "react";
 import { FiPlus } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { MemberNearYou } from "../MemberNearYou/MemberNearYou";
-import MemberNearYou from "../../Data/MemberNearYouData";
+import MemberNearYouData from "../../Data/MemberNearYouData";
 import { SectionHeader } from "../SectionHeader/SectionHeader";
 import { GetWindowDimension } from "../../utils/GetWindowDimension";
 import "./style.css";
@@ -38,7 +38,7 @@ export const JoinCommunity = () => {
         <p id="join_title">Connect with expats and locals around the world</p>
         <p id="join_header">More than 180K expats and 32K members globally</p>
         <div className="join_member_list">
-          {MemberNearYou.map((memberData, index) => (
+          {MemberNearYouData.map((memberData, index) => (
             <MemberNearYou memberData={memberData} key={index} />
           ))}
         </div>

@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FiSearch } from "react-icons/fi";
 import "./style.css";
-import CityData from "../../Data/JoinCityData";
+import JoinCityData from "../../Data/JoinCityData";
 
 export const SearchCity = () => {
   const [query, setQuery] = useState("");
   const [isVisible, setIsVisible] = useState(false);
-  const [joinCity, setJoinCity] = useState(CityData);
+  const [joinCity, setJoinCity] = useState(JoinCityData);
   const [currentURL, setCurrentURL] = useState();
   const node = useRef();
 
@@ -15,7 +15,7 @@ export const SearchCity = () => {
   }, [query]);
 
   const fetchJoinCityData = () => {
-    const sorted = mockCity.filter((city) =>
+    const sorted = JoinCityData.filter((city) =>
       city.name.toLowerCase().includes(query.toLowerCase())
     );
     setJoinCity(sorted.sort());
@@ -71,7 +71,7 @@ export const SearchCity = () => {
       </div>
       {isVisible && (
         <div className="search_result_containter">
-          {joinCity.map((city, index) => (
+          {JoinCityData.map((city, index) => (
             <button
               className="result_item"
               onClick={() => onSelectCity(city.name, city.url)}

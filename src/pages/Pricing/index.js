@@ -14,7 +14,7 @@ import { OwnSection } from "../../components/OwnSection/OwnSection";
 import { Footer } from "../../components/Footer/Footer";
 import globe from "../../assets/Pricing/Pricing_globe_1.svg";
 import { MemberNearYou } from "../../components/MemberNearYou/MemberNearYou";
-import MemberNearYou from "../../Data/MemberNearYouData";
+import MemberNearYouData from "../../Data/MemberNearYouData";
 import { PricingWhyContent } from "./components/PricingWhyContent/PricingWhyContent";
 import pricingExtraServices from "../../Data/PricingExtraServicesData";
 import { PricingExtraService } from "./components/PricingExtraService/PricingExtraService";
@@ -169,7 +169,7 @@ export const Pricing = () => {
           </div>
           <div className="pricing-why-reason">
             <div className="pricing-why-reason-member-grid">
-              {MemberNearYou.map((memberData, index) => (
+              {MemberNearYouData.map((memberData, index) => (
                 <MemberNearYou memberData={memberData} key={index} />
               ))}
             </div>

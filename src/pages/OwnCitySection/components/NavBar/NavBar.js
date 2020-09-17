@@ -5,6 +5,10 @@ import { animated, useSpring } from "react-spring";
 import { HashLink } from "react-router-hash-link";
 import Logo from "../../../../assets/Logo_red.svg";
 import { GetWindowDimension } from "../../../../utils/GetWindowDimension";
+import DestinationIcon from "../../../../assets/Nav/DestinationIcon.svg";
+import ServicesIcon from "../../../../assets/Nav/ServicesIcon.svg";
+import PricingIcon from "../../../../assets/Nav/PricingIcon.svg";
+import CareerIcon from "../../../../assets/Nav/CareerIcon.svg";
 import "./style.css";
 
 export const NavBar = ({ modalIsOpen, setModalIsOpen }) => {
@@ -92,42 +96,42 @@ export const NavBar = ({ modalIsOpen, setModalIsOpen }) => {
         </div>
       )}
       <animated.div style={animation} className="navigation_mobile_menu">
-        <div className="nav-top">
-          <HashLink className="nav-item" to="/#section_newcity" smooth>
-            <img src={three} alt="nav-icon" className="nav-icon" />
+        <div className="nav_top">
+          <HashLink className="nav_item" to="/#section_newcity" smooth>
+            <img src={DestinationIcon} alt="nav_icon" className="nav_icon" />
             Destination
           </HashLink>
-          <HashLink className="nav-item" to="/#aux_services" smooth>
-            <img src={four} alt="nav-icon" className="nav-icon" />
+          <HashLink className="nav_item" to="/#aux_services" smooth>
+            <img src={ServicesIcon} alt="nav_icon" className="nav_icon" />
             Services
           </HashLink>
 
-          <HashLink className="nav-item" to="/pricing">
-            <img src={two} alt="nav-icon" className="nav-icon" />
+          <HashLink className="nav_item" to="/pricing">
+            <img src={PricingIcon} alt="nav_icon" className="nav_icon" />
             Pricing
           </HashLink>
-          <a href="http://skillscanner.globuzzer.com/" className="nav-item">
-            <img src={six} alt="nav-icon" className="nav-icon" />
+          <a href="http://skillscanner.globuzzer.com/" className="nav_item">
+            <img src={CareerIcon} alt="nav_icon" className="nav_icon" />
             Career
           </a>
         </div>
-        <div className="nav-bottom">
+        <div className="nav_bottom">
           <a
             href="https://globuzzer.com/travel-blog.php"
-            className="nav-mobile-own"
+            className="nav_mobile_own"
           >
             Create your travel blog
           </a>
-          <div className="nav-bottom-container">
+          <div className="nav_bottom_container">
             <a
               type="button"
               href="https://globuzzer.mn.co/sign_in"
-              className="nav-mob-link"
+              className="nav_mob_link"
             >
               Login
             </a>
-            <button type="button" className="nav-mob-link" id="mob-sign">
-              <Link to="/signup" className="nav-mob-link">
+            <button type="button" className="nav_mob_link" id="mob_sign">
+              <Link to="/signup" className="nav_mob_link">
                 Sign up
               </Link>
             </button>

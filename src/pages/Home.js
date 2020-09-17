@@ -9,7 +9,7 @@ import { JoinCity } from "../components/JoinCity/JoinCity";
 import community from "../assets/Value_community.svg";
 import expert from "../assets/Value_expert.svg";
 import journey from "../assets/Value_journey.svg";
-import JoinCity from "../Data/JoinCityData";
+import JoinCityData from "../Data/JoinCityData";
 import FeaturedArticlesData from "../Data/FeatueredArticlesData";
 import AuxServicesData from "../Data/AuxServicesData";
 import { FeaturedArticle } from "../components/FeaturedArticle/FeaturedArticle";
@@ -23,14 +23,14 @@ import { RequestNewCity } from "../components/RequestNewCity/RequestNewCity";
 export const Home = () => {
   const [query, setQuery] = useState("");
   const [moreJoinCity, setMoreJoinCity] = useState(false);
-  const [joinCity, setJoinCity] = useState(JoinCity);
+  const [joinCity, setJoinCity] = useState(JoinCityData);
 
   useEffect(() => {
     fetchJoinCityData();
   }, [query, moreJoinCity]);
 
   const fetchJoinCityData = () => {
-    const sorted = JoinCity.filter((city) =>
+    const sorted = JoinCityData.filter((city) =>
       city.name.toLowerCase().includes(query.toLowerCase())
     );
     moreJoinCity
