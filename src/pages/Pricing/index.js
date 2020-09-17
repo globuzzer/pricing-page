@@ -18,7 +18,7 @@ import MemberNearYouData from "../../Data/MemberNearYouData";
 import { PricingWhyContent } from "./components/PricingWhyContent/PricingWhyContent";
 import pricingExtraServices from "../../Data/PricingExtraServicesData";
 import { PricingExtraService } from "./components/PricingExtraService/PricingExtraService";
-import { PricingReview } from "./components/PricingReview/PricingReview";
+import PricingReview from "./components/PricingReview/PricingReview";
 import ReviewData from "../../Data/ReviewData";
 import pricingPackages from "../../Data/PricingPackagesData";
 import { PricingContactUs } from "./components/PricingContactUs/PricingContactUs";
@@ -210,8 +210,8 @@ export const Pricing = () => {
         <SectionHeader header="Our partners" />
         <div className="review-slide-container">
           <Slide infinite arrows duration={5000}>
-            {ReviewData.map((review, index) => (
-              <PricingReview review={review} key={index} />
+            {ReviewData.map(({ ava, score, url }) => (
+              <PricingReview ava={ava} key={score} url={url} />
             ))}
           </Slide>
         </div>

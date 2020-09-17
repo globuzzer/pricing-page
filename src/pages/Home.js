@@ -12,8 +12,8 @@ import journey from "../assets/Value_journey.svg";
 import JoinCityData from "../Data/JoinCityData";
 import FeaturedArticlesData from "../Data/FeatueredArticlesData";
 import AuxServicesData from "../Data/AuxServicesData";
-import { FeaturedArticle } from "../components/FeaturedArticle/FeaturedArticle";
-import { AuxService } from "../components/AuxService/AuxService";
+import FeaturedArticle from "../components/FeaturedArticle/FeaturedArticle";
+import AuxService from "../components/AuxService/AuxService";
 import { OwnSection } from "../components/OwnSection/OwnSection";
 import { Footer } from "../components/Footer/Footer";
 import { SearchCity } from "../components/SearchCity/SearchCity";
@@ -126,8 +126,8 @@ Most importantly, we have been in the same spot, and we can support you. `;
 
       <section className="featured_articles" id="featured_articles">
         <SectionHeader header="Featured articles" />
-        {FeaturedArticlesData.map((articleData, index) => (
-          <FeaturedArticle articleData={articleData} key={index} />
+        {FeaturedArticlesData.map(({ title, ...otherProps }) => (
+          <FeaturedArticle key={title} title={title} {...otherProps} />
         ))}
         <div className="featured_articles_more">
           <a
@@ -142,8 +142,8 @@ Most importantly, we have been in the same spot, and we can support you. `;
       <section className="aux_services" id="aux_services">
         <SectionHeader header="Helpful services" />
         <div className="aux_list">
-          {AuxServicesData.map((AuxData, index) => (
-            <AuxService AuxData={AuxData} key={index} />
+          {AuxServicesData.map(({ name, ...otherProps }) => (
+            <AuxService name={name} key={name} {...otherProps} />
           ))}
         </div>
       </section>
