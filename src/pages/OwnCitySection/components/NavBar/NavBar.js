@@ -75,26 +75,6 @@ export const NavBar = ({ modalIsOpen, setModalIsOpen }) => {
   );
   const NavMobileMenu = () => (
     <div style={{ display: "flex" }}>
-      {isOpen && (
-        <div
-          onKeyDown={() => {}}
-          tabIndex={0}
-          role="button"
-          style={{
-            backgroundColor: "transparent",
-            width: "100vw",
-            height: "100vh",
-            position: "absolute",
-            top: 0,
-            left: 0,
-            zIndex: 9999,
-            color: "transparent",
-          }}
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          Test
-        </div>
-      )}
       <animated.div style={animation} className="navigation_mobile_menu">
         <div className="nav_top">
           <HashLink className="nav_item" to="/#section_newcity" smooth>
