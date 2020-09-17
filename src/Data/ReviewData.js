@@ -8,31 +8,26 @@ export default [
   {
     ava: one,
     score: 4,
-
     url: "https://arbetsformedlingen.se/",
   },
   {
     ava: two,
     score: 5,
-
     url: "https://radicalstorage.com/",
   },
   {
     ava: three,
     score: 3,
-
     url: "https://www.vikingline.se/",
   },
   {
     ava: four,
     score: 3,
-
     url: "https://www.smun.se/",
   },
   {
     ava: five,
     score: 3,
-
     url: "https://www.kth.se/",
   },
 ];
