@@ -40,7 +40,7 @@ const Form = ({ setIsSubmitted, form, handleForm, handleSubmit }) => {
             type="text"
             name="name"
             value={name}
-            onChange={(evt) => handleForm(evt)}
+            onChange={(event) => handleForm(event)}
           />
           <input
             className="pricing_input"
@@ -48,7 +48,7 @@ const Form = ({ setIsSubmitted, form, handleForm, handleSubmit }) => {
             type="email"
             name="email"
             value={email}
-            onChange={(evt) => handleForm(evt)}
+            onChange={(event) => handleForm(event)}
           />
           <input
             className="pricing_input"
@@ -56,7 +56,7 @@ const Form = ({ setIsSubmitted, form, handleForm, handleSubmit }) => {
             type="text"
             name="city"
             value={city}
-            onChange={(evt) => handleForm(evt)}
+            onChange={(event) => handleForm(event)}
           />
           <input
             className="pricing_input"
@@ -64,7 +64,7 @@ const Form = ({ setIsSubmitted, form, handleForm, handleSubmit }) => {
             type="text"
             name="company"
             value={company}
-            onChange={(evt) => handleForm(evt)}
+            onChange={(event) => handleForm(event)}
           />
           <input
             className="pricing_input"
@@ -72,7 +72,7 @@ const Form = ({ setIsSubmitted, form, handleForm, handleSubmit }) => {
             type="text"
             name="phone"
             value={phone}
-            onChange={(evt) => handleForm(evt)}
+            onChange={(event) => handleForm(event)}
           />
           <input
             className="pricing_input"
@@ -80,7 +80,7 @@ const Form = ({ setIsSubmitted, form, handleForm, handleSubmit }) => {
             type="text"
             name="subject"
             value={subject}
-            onChange={(evt) => handleForm(evt)}
+            onChange={(event) => handleForm(event)}
           />
         </div>
         <textarea
@@ -90,7 +90,7 @@ const Form = ({ setIsSubmitted, form, handleForm, handleSubmit }) => {
           cols="50"
           spellCheck
           placeholder="Message* (maximum 1000 words)"
-          onChange={(evt) => handleForm(evt)}
+          onChange={(event) => handleForm(event)}
           value={message}
         />
       </div>
@@ -156,8 +156,8 @@ export const PricingExtraServiceChoose = ({
     city: "",
     message: "",
   });
-  const handleForm = (evt) => {
-    const newForm = { ...form, [evt.target.name]: evt.target.value };
+  const handleForm = (event) => {
+    const newForm = { ...form, [event.target.name]: event.target.value };
     setForm(newForm);
   };
   const newIndex = extraPlan + 1;

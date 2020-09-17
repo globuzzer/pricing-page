@@ -57,28 +57,28 @@ const FormTwo = ({ formTwo, handleFormTwo, isAgreed, handlePolicy }) => {
           placeholder="First name *"
           name="firstname"
           value={firstname}
-          onChange={(evt) => handleFormTwo(evt)}
+          onChange={(event) => handleFormTwo(event)}
         />
         <input
           type="text"
           placeholder="Last name *"
           name="lastname"
           value={lastname}
-          onChange={(evt) => handleFormTwo(evt)}
+          onChange={(event) => handleFormTwo(event)}
         />
         <input
           type="email"
           placeholder="Email *"
           name="email"
           value={email}
-          onChange={(evt) => handleFormTwo(evt)}
+          onChange={(event) => handleFormTwo(event)}
         />
         <input
           type="number"
           placeholder="Phone number *"
           name="phone"
           value={phone}
-          onChange={(evt) => handleFormTwo(evt)}
+          onChange={(event) => handleFormTwo(event)}
         />
         <div className="policy_container">
           <input
@@ -127,8 +127,8 @@ export const GetStarted = ({ modalIsOpen, setModalIsOpen }) => {
       phone === "" ||
       isAgreed === false);
 
-  const handleFormTwo = (evt) => {
-    const newFormTwo = { ...formTwo, [evt.target.name]: evt.target.value };
+  const handleFormTwo = (event) => {
+    const newFormTwo = { ...formTwo, [event.target.name]: event.target.value };
     setFormTwo(newFormTwo);
   };
 

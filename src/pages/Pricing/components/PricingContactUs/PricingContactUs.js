@@ -54,7 +54,7 @@ const Form = ({
             type="text"
             name="name"
             value={name}
-            onChange={(evt) => handleForm(evt)}
+            onChange={(event) => handleForm(event)}
           />
           <input
             className="pricing_input"
@@ -62,7 +62,7 @@ const Form = ({
             type="email"
             name="email"
             value={email}
-            onChange={(evt) => handleForm(evt)}
+            onChange={(event) => handleForm(event)}
           />
           <input
             className="pricing_input"
@@ -70,7 +70,7 @@ const Form = ({
             type="text"
             name="city"
             value={city}
-            onChange={(evt) => handleForm(evt)}
+            onChange={(event) => handleForm(event)}
           />
           <input
             className="pricing_input"
@@ -78,7 +78,7 @@ const Form = ({
             type="text"
             name="company"
             value={company}
-            onChange={(evt) => handleForm(evt)}
+            onChange={(event) => handleForm(event)}
           />
           <input
             className="pricing_input"
@@ -86,7 +86,7 @@ const Form = ({
             type="tel"
             name="phone"
             value={phone}
-            onChange={(evt) => handleForm(evt)}
+            onChange={(event) => handleForm(event)}
           />
           <input
             className="pricing_input"
@@ -94,14 +94,14 @@ const Form = ({
             type="text"
             name="subject"
             value={subject}
-            onChange={(evt) => handleForm(evt)}
+            onChange={(event) => handleForm(event)}
           />
         </div>
         <textarea
           id="message"
           name="message"
           value={message}
-          onChange={(evt) => handleForm(evt)}
+          onChange={(event) => handleForm(event)}
           rows="4"
           cols="50"
           spellCheck
@@ -174,8 +174,8 @@ export const PricingContactUs = ({ contactModal, setContactModal }) => {
 
   const API_PATH =
     "https://staging1.globuzzer.com/phuong-2020/contact-sent.php";
-  const handleForm = (evt) => {
-    const newForm = { ...form, [evt.target.name]: evt.target.value };
+  const handleForm = (event) => {
+    const newForm = { ...form, [event.target.name]: event.target.value };
 
     setForm(newForm);
   };
