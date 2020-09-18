@@ -7,28 +7,27 @@ import Michael from "../assets/Michael.png";
 
 export default [
     {
-        name: "Gunjan",
-        img: Gunjan,
+      name: "Gunjan",
+      img: Gunjan,
     },
     {
-        name: "Chloe",
-        img: Chloe,
+      name: "Chloe",
+      img: Chloe,
     },
     {
-        name: "Jonathan",
-        img: Jonathan,
-    },
-
-    {
-        name: "Chloé",
-        img: Chloé,
+      name: "Jonathan",
+      img: Jonathan,
     },
     {
-        name: "Gabriela",
-        img: Gabriela,
+      name: "Chloé",
+      img: Chloé,
     },
     {
-        name: "Michael",
-        img: Michael,
+      name: "Gabriela",
+      img: Gabriela,
+    },
+    {
+      name: "Michael",
+      img: Michael,
     },
 ];
