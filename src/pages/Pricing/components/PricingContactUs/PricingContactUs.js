@@ -172,6 +172,8 @@ export const PricingContactUs = ({ contactModal, setContactModal }) => {
     message: "",
   });
 
+  const handleSubmitValidation = () => {};
+
   const API_PATH =
     "https://staging1.globuzzer.com/phuong-2020/contact-sent.php";
   const handleForm = (event) => {
