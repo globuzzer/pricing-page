@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { FiMenu } from "react-icons/fi";
 import { animated, useSpring } from "react-spring";
-import GLOBUZZER from "../../assets/GLOBUZZER.svg";
+import GLOBUZZER from "../../assets/Logo.svg";
 import { GetWindowDimension } from "../../utils/GetWindowDimension";
 import DestinationIcon from "../../assets/Nav/DestinationIcon.svg";
 import ServicesIcon from "../../assets/Nav/ServicesIcon.svg";
@@ -18,33 +18,11 @@ export const Navigation = () => {
 
   window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
-    const screenWidth = window.innerWidth;
-    const signUpButton = document.querySelector("#button_signup");
-    const signUpButtonLink = document.querySelector(
-      "#button_signup .navigation_link"
-    );
+
     if (currentScroll > 60) {
       setNavColor("rgba(128,128,128,0.6)");
     } else {
       setNavColor("transparent");
-    }
-
-    if (
-      !currentScroll &&
-      screenWidth >= 1100 &&
-      signUpButton &&
-      signUpButtonLink
-    ) {
-      signUpButtonLink.style.color = "#f24b6a";
-      signUpButton.style.backgroundColor = "#ffffff";
-    } else if (
-      currentScroll > 60 &&
-      screenWidth >= 1100 &&
-      signUpButton &&
-      signUpButtonLink
-    ) {
-      signUpButton.style.backgroundColor = "#f24b6a";
-      signUpButtonLink.style.color = "#f9f9f9";
     }
   });
 

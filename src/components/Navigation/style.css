@@ -8,7 +8,7 @@
   top: 0;
   border-bottom: 1px solid white;
   z-index: 10;
-  background-color: #ffffff;
+  background-color: rgba(128, 128, 128, 0.6);
 }
 
 @media (min-width: 1100px) {
@@ -64,12 +64,12 @@ button {
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
-  color: #909090;
+  color: #ffffff;
   text-align: center;
 }
 
 .navigation_link:visited {
-  color: #909090;
+  color: #ffffff;
 }
 
 #link_own {
@@ -92,19 +92,19 @@ button {
 }
 
 #button_login {
-  color: #909090;
+  color: #ffffff;
   text-decoration: none;
   margin-right: 15px;
 }
 
 #button_signup {
-  border: 1px solid #f24b6a;
+  border: 1px solid #ffffff;
   border-radius: 5px;
 }
 
 #button_signup .navigation_link {
-  color: #f24b6a;
-  font-size: 13px;
+  color: #ffffff;
+  font-size: 16px;
 }
 
 .mobile_hamburger_menu {
@@ -151,8 +151,7 @@ button {
   line-height: 17px;
 }
 
-.mobile_hamburger_close:hover,
-.mobile_hamburger_close:visited {
+.mobile_hamburger_close:hover, .mobile_hamburger_close:visited {
   background-color: #f24b6a;
 }
 

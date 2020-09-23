@@ -20,20 +20,24 @@ export const SearchCity = () => {
     );
     setJoinCity(sorted.sort());
   };
+  
   const onSelectCity = (city, url) => {
     setIsVisible(!isVisible);
     setCurrentURL(url);
     setQuery(city);
   };
+  
   const navigateTo = (url) => {
     window.location.href = `${url}`;
   };
+  
   const handleClick = (e) => {
     if (node.current.contains(e.target)) {
     } else {
       setIsVisible(false);
     }
   };
+  
   useEffect(() => {
     document.addEventListener("mousedown", handleClick);
 
@@ -41,6 +45,7 @@ export const SearchCity = () => {
       document.removeEventListener("mousedown", handleClick);
     };
   }, []);
+  
   return (
     <div className="search_city_container" ref={node}>
       <div className="header_search">
