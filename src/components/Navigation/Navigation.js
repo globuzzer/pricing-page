@@ -18,7 +18,6 @@ export const Navigation = () => {
 
   window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
-
     if (currentScroll > 60) {
       setNavColor("rgba(128,128,128,0.6)");
     } else {
